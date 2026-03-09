@@ -19,6 +19,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis
 } from "recharts";
 import { ChevronDown, Anchor, Sparkles, Layers, Droplets, Waves, Paintbrush, Scissors, Calculator, Star, Phone, Mail, ExternalLink } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 
 const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/marina_hero_bg-ciBnuwt69YTPTstqegLTJT.webp";
@@ -1083,55 +1084,53 @@ export default function Home() {
       </section>
 
       {/* ── Contact / Footer ── */}
-      <section id="contact" className="py-20 border-t border-white/8" style={{ background: "oklch(0.11 0.006 240)" }}>
+      <section id="contact" className="py-24" style={{ background: "oklch(0.11 0.006 240)" }}>
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <Reveal>
-              <div>
-                <img src={LOGO_URL} alt="A1 Marine Care" className="h-10 object-contain mb-6" />
-                <h2 className="text-3xl font-bold text-white font-['Syne'] mb-4">
-                  Ready to get started?
-                </h2>
-                <p className="text-white/50 mb-6 font-['DM_Sans'] leading-relaxed">
-                  Contact A1 Marine Care to schedule services for Brandy's Cove Marina. Use our online quote tool for instant estimates on any service.
-                </p>
-                <div className="space-y-3">
-                  <a href="https://quote.a1marinecare.ca" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#00e5ff] hover:opacity-80 transition-opacity">
-                    <ExternalLink className="w-4 h-4" />
-                    <span className="text-sm">quote.a1marinecare.ca</span>
-                  </a>
-                  <div className="flex items-center gap-3 text-white/50">
-                    <Phone className="w-4 h-4" />
-                    <span className="text-sm">Contact via website</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-white/50">
-                    <Mail className="w-4 h-4" />
-                    <span className="text-sm">Available through quote portal</span>
-                  </div>
-                </div>
+          <Reveal>
+            <div className="mb-12">
+              <p className="text-[#00e5ff] text-sm tracking-widest uppercase font-['DM_Sans'] mb-2">Get in Touch</p>
+              <h2 className="text-4xl font-bold text-white font-['Syne']">Contact Us</h2>
+              <div className="cyan-rule w-24 mt-4" />
+            </div>
+          </Reveal>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Reveal delay={100}>
+              <div className="md:col-span-2">
+                <ContactForm />
               </div>
             </Reveal>
-            <Reveal delay={100}>
+            <Reveal delay={200}>
               <Card style={{ background: "oklch(0.12 0.006 240)", border: "1px solid oklch(1 0 0 / 8%)" }}>
-                <CardContent className="pt-6">
-                  <h3 className="text-white font-['Syne'] font-semibold mb-4">Quick Service Summary</h3>
-                  <div className="space-y-2">
-                    {[
-                      ["Gelcoat Restoration", "$18–36/ft"],
-                      ["Exterior Detailing", "$20–32/ft"],
-                      ["Interior Detailing", "$18–28.80/ft"],
-                      ["Ceramic Coating", "$55/ft"],
-                      ["Graphene Nano Coating", "$70/ft"],
-                      ["Wet Sanding / Correction", "$78–117/ft"],
-                      ["Bottom Painting", "$40/ft"],
-                      ["Vinyl Removal", "$12/ft"],
-                      ["Vinyl Installation", "$18/ft"],
-                    ].map(([svc, price], i) => (
-                      <div key={i} className="flex justify-between items-center py-1.5 border-b border-white/5 last:border-0">
-                        <span className="text-sm text-white/60">{svc}</span>
-                        <span className="text-sm font-medium" style={{ color: "#00e5ff" }}>{price}</span>
-                      </div>
-                    ))}
+                <CardContent className="pt-6 space-y-6">
+                  <div>
+                    <h3 className="text-white font-['Syne'] font-semibold mb-4">Quick Service Summary</h3>
+                    <div className="space-y-2">
+                      {[
+                        ["Gelcoat Restoration", "$18–36/ft"],
+                        ["Exterior Detailing", "$20–32/ft"],
+                        ["Interior Detailing", "$18–28.80/ft"],
+                        ["Ceramic Coating", "$55/ft"],
+                        ["Graphene Nano Coating", "$70/ft"],
+                        ["Wet Sanding / Correction", "$78–117/ft"],
+                        ["Bottom Painting", "$40/ft"],
+                        ["Vinyl Removal", "$12/ft"],
+                        ["Vinyl Installation", "$18/ft"],
+                      ].map(([svc, price], i) => (
+                        <div key={i} className="flex justify-between items-center py-1.5 border-b border-white/5 last:border-0">
+                          <span className="text-sm text-white/60">{svc}</span>
+                          <span className="text-sm font-medium" style={{ color: "#00e5ff" }}>{price}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <Separator className="opacity-20" />
+                  <div>
+                    <p className="text-sm text-white/60 mb-3">Or reach out directly:</p>
+                    <a href="https://quote.a1marinecare.ca" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#00e5ff] hover:opacity-80 transition-opacity text-sm">
+                      <ExternalLink className="w-4 h-4" />
+                      quote.a1marinecare.ca
+                    </a>
                   </div>
                 </CardContent>
               </Card>
