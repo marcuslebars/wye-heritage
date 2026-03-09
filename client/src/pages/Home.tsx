@@ -1117,7 +1117,7 @@ export default function Home() {
                   <h3 className="text-white font-['Syne'] font-semibold mb-4">Quick Service Summary</h3>
                   <div className="space-y-2">
                     {[
-                      ["Gelcoat Restoration", "$18–33/ft"],
+                      ["Gelcoat Restoration", "$18–36/ft"],
                       ["Exterior Detailing", "$20–32/ft"],
                       ["Interior Detailing", "$18–28.80/ft"],
                       ["Ceramic Coating", "$55/ft"],
