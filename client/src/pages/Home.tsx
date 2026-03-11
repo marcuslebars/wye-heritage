@@ -21,7 +21,7 @@ import {
 import { ChevronDown, Anchor, Sparkles, Layers, Droplets, Waves, Paintbrush, Scissors, Calculator, Star, Phone, Mail, ExternalLink } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/wye-heritage-logo_4caaf0df.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/marina_hero_bg-ciBnuwt69YTPTstqegLTJT.webp";
 const DETAILING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/boat_detailing_bg-enmxuamfmSHwdu9eyZyRrY.webp";
 const COATING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/ceramic_coating_bg-M6heuGVfNdNky9vYGxpFkr.webp";
@@ -347,13 +347,13 @@ export default function Home() {
           </Reveal>
           <Reveal delay={100}>
             <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight font-['Syne']">
-              Brandy's Cove<br />
-              <span style={{ color: "#00e5ff" }} className="cyan-glow-text">Marina</span>
+              Wye Heritage<br />
+              <span style={{ color: "#00e5ff" }} className="cyan-glow-text">Marine Resort</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 font-['DM_Sans'] font-light">
-              Professional marine detailing, restoration, and protection services by A1 Marine Care — tailored for your fleet.
+              Professional marine detailing, restoration, and protection services by A1 Marine Care — exclusively tailored for Wye Heritage Marine Resort.
             </p>
           </Reveal>
           <Reveal delay={300}>
@@ -412,8 +412,8 @@ export default function Home() {
         <div className="container">
           <Reveal>
             <div className="mb-12">
-              <p className="text-[#00e5ff] text-sm tracking-widest uppercase font-['DM_Sans'] mb-2">What We Offer</p>
-              <h2 className="text-4xl font-bold text-white font-['Syne']">Our Services</h2>
+              <p className="text-[#00e5ff] text-sm tracking-widest uppercase font-['DM_Sans'] mb-2">Tailored for You</p>
+              <h2 className="text-4xl font-bold text-white font-['Syne']">Services Customized for Wye Heritage</h2>
               <div className="cyan-rule w-24 mt-4" />
             </div>
           </Reveal>
@@ -1088,8 +1088,8 @@ export default function Home() {
         <div className="container">
           <Reveal>
             <div className="mb-12">
-              <p className="text-[#00e5ff] text-sm tracking-widest uppercase font-['DM_Sans'] mb-2">Get in Touch</p>
-              <h2 className="text-4xl font-bold text-white font-['Syne']">Contact Us</h2>
+              <p className="text-[#00e5ff] text-sm tracking-widest uppercase font-['DM_Sans'] mb-2">Your Custom Service Plan</p>
+              <h2 className="text-4xl font-bold text-white font-['Syne']">Request Your Tailored Quote</h2>
               <div className="cyan-rule w-24 mt-4" />
             </div>
           </Reveal>
@@ -1144,7 +1144,7 @@ export default function Home() {
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <img src={LOGO_URL} alt="A1 Marine Care" className="h-6 object-contain opacity-60" />
           <p className="text-xs text-white/30 text-center">
-            © 2026 A1 Marine Care · Brandy's Cove Marina 2026 Season Proposal · All prices subject to on-site inspection
+            © 2026 A1 Marine Care · Wye Heritage Marine Resort 2026 Season Proposal · All prices subject to on-site inspection
           </p>
         </div>
       </footer>
