@@ -21,7 +21,8 @@ import {
 import { ChevronDown, Anchor, Sparkles, Layers, Droplets, Waves, Paintbrush, Scissors, Calculator, Star, Phone, Mail, ExternalLink } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/wye-heritage-logo_4caaf0df.png";
+const HEADER_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
+const HERO_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/wye-heritage-logo_4caaf0df.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/marina_hero_bg-ciBnuwt69YTPTstqegLTJT.webp";
 const DETAILING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/boat_detailing_bg-enmxuamfmSHwdu9eyZyRrY.webp";
 const COATING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/ceramic_coating_bg-M6heuGVfNdNky9vYGxpFkr.webp";
@@ -306,7 +307,7 @@ export default function Home() {
         }}
       >
         <div className="container flex items-center justify-between h-16">
-          <img src={LOGO_URL} alt="A1 Marine Care" className="h-8 object-contain" />
+          <img src={HEADER_LOGO_URL} alt="A1 Marine Care" className="h-8 object-contain" />
           <div className="hidden md:flex items-center gap-6">
             {navItems.map(item => (
               <button
@@ -346,10 +347,9 @@ export default function Home() {
             </Badge>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight font-['Syne']">
-              Wye Heritage<br />
-              <span style={{ color: "#00e5ff" }} className="cyan-glow-text">Marine Resort</span>
-            </h1>
+            <div className="flex justify-center mb-8">
+              <img src={HERO_LOGO_URL} alt="Wye Heritage Marine Resort" className="h-40 md:h-56 object-contain" />
+            </div>
           </Reveal>
           <Reveal delay={200}>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 font-['DM_Sans'] font-light">
@@ -1142,7 +1142,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-6 border-t border-white/8">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <img src={LOGO_URL} alt="A1 Marine Care" className="h-6 object-contain opacity-60" />
+          <img src={HEADER_LOGO_URL} alt="A1 Marine Care" className="h-6 object-contain opacity-60" />
           <p className="text-xs text-white/30 text-center">
             © 2026 A1 Marine Care · Wye Heritage Marine Resort 2026 Season Proposal · All prices subject to on-site inspection
           </p>
