@@ -21,6 +21,7 @@ import {
 import { ChevronDown, Anchor, Sparkles, Layers, Droplets, Waves, Paintbrush, Scissors, Calculator, Star, Phone, Mail, ExternalLink } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 
+const NAV_LOGO_URL = "/a1-marine-care-logo-white-400x100.png";
 const HEADER_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
 const HERO_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/marina_hero_bg-ciBnuwt69YTPTstqegLTJT.webp";
@@ -307,7 +308,7 @@ export default function Home() {
         }}
       >
         <div className="container flex items-center justify-between h-16">
-          <img src={HEADER_LOGO_URL} alt="A1 Marine Care" className="h-8 object-contain" />
+          <img src={NAV_LOGO_URL} alt="A1 Marine Care" className="h-8 object-contain" />
           <div className="hidden md:flex items-center gap-6">
             {navItems.map(item => (
               <button
