@@ -22,7 +22,7 @@ import { ChevronDown, Anchor, Sparkles, Layers, Droplets, Waves, Paintbrush, Sci
 import { ContactForm } from "@/components/ContactForm";
 
 const HEADER_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
-const HERO_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/wye-heritage-logo_4caaf0df.png";
+const HERO_LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/A1MarineCarelogowhite400x100_535ce807.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/marina_hero_bg-ciBnuwt69YTPTstqegLTJT.webp";
 const DETAILING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/boat_detailing_bg-enmxuamfmSHwdu9eyZyRrY.webp";
 const COATING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663416842994/cNQZjY9PDBBtriZZVrz4oh/ceramic_coating_bg-M6heuGVfNdNky9vYGxpFkr.webp";
